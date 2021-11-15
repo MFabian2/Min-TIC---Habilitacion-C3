@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css'; //1
+import './App.css'; //2
+import {Auth0Provider} from '@auth0/auth0-react'
+import Routes from './Routes/Routes';
+//sadasd
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className='App'>
+      <Auth0Provider 
+      domain="app-ventas.us.auth0.com"
+      clientId="LpVzZM2UWoOtpMZyZZai0mjcMYa7xsES"
+      redirectUri={window.location.origin}
+    >
+      <Routes /> 
+    </Auth0Provider>
+  </div>
   );
 }
 
