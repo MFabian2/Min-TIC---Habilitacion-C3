@@ -9,8 +9,9 @@ function App() {
       <Auth0Provider 
       domain="app-ventas.us.auth0.com"
       clientId="LpVzZM2UWoOtpMZyZZai0mjcMYa7xsES"
-      redirectUri={window.location.origin}
-    >
+      redirectUri={window.location.origin}>
+
+        
       <Routes /> 
     </Auth0Provider>
   </div>

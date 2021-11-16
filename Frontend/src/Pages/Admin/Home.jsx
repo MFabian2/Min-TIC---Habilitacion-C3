@@ -2,13 +2,13 @@ import React from 'react'
 
 
 
-const Ventas = () => {
+const Home = () => {
     return (
         <div>
-            este es ventas
+            este es home
             
         </div>
     )
 }
 
-export default Ventas
+export default Home

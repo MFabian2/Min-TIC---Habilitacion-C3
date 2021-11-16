@@ -30,29 +30,33 @@ const Navbars = () => {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 <img src="../../public/logo512.png" alt="" />
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="/home">Marck's Shop</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto">
-                <Nav.Link href="/ventas">Ventas</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-                </Nav>
                 <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                    Dank memes
-                </Nav.Link>
+                    <Nav className="me-auto">
+                    <Nav.Link href="/ventas">Quienes somos</Nav.Link>
+                    <Nav.Link href="#pricing">Contactenos</Nav.Link>
+                    <Nav.Link href="#pricing">  </Nav.Link>
+                    <Nav.Link href="#pricing">  </Nav.Link>
+                    <Nav.Link href="#pricing">Productos</Nav.Link>
+                    <Nav.Link href="#pricing">Gestionar Productos</Nav.Link>
+                    <Nav.Link href="#pricing">Ingresar Productos</Nav.Link>
+                    <Nav.Link href="#pricing">Gestionar Ventas</Nav.Link>
+                    <Nav.Link href="#pricing">Ingresar Ventas</Nav.Link>
+                    </Nav>
                 </Nav>
             </Navbar.Collapse>
             </Container>
             {
                 isAuthenticated ?
                 <NavDropdown title={Name} id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="#dash">Dashboard</NavDropdown.Item>
-                    <NavDropdown.Item href="/roles">Roles</NavDropdown.Item>
-                    <NavDropdown.Item href="#ventas">Ventas</NavDropdown.Item>
+                    <NavDropdown.Item href="/roles">Gestionar Usuarios</NavDropdown.Item>
+                    <NavDropdown.Item href="#ventas">Crear Ususarios</NavDropdown.Item>
+                    <NavDropdown.Item href="#dash">Eliminar Usuarios</NavDropdown.Item>
+                    <NavDropdown.Item href="#dash">Gestionar Roles</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.4">Configuración</NavDropdown.Item>
                 </NavDropdown>:
                 null
             }

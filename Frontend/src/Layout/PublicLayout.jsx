@@ -1,3 +1,6 @@
+
+import FooterPage from "../Components/Footer/FooterPage"
+import Informacion_ventas from "../Components/modulos/Informacion_ventas"
 import Navbars from "../Components/nav-bar/Navbars"
 
 
@@ -7,6 +10,8 @@ function PublicLayout({children}) {
             este es mi PublicLayout
             {children}
             <Navbars/>
+            <Informacion_ventas/> 
+            <FooterPage/>
         </div>
     )
 }
